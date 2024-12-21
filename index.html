@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NightCast Weather</title>
+   
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="weather-container">
+        <div class="search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-secondary);">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-box" placeholder="Search for a city">
+            <button class="Search">Search</button>
+        </div>
+        
+        <img class="weather-icon" id="weather-icon" src="" alt="Weather Icon">
+        <div class="temperature" id="temperature">--°C</div>
+        <div class="city-name" id="city-name">City Name</div>
+        <div class="weather-description" id="description">Weather Description</div>
+        
+        <div class="weather-details">
+            <div class="detail">
+                <div class="detail-label">Humidity</div>
+                <div class="detail-value" id="humidity">--%</div>
+            </div>
+            <div class="detail">
+                <div class="detail-label">Wind</div>
+                <div class="detail-value" id="wind-speed">-- km/h</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
